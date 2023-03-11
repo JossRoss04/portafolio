@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinepolis</title>
+</head>
+<style>
+    body{
+        background-color: rgb(236, 239, 252);
+    }
+    legend{
+        font-size: 200%;
+        color: rgb(61, 12, 0);
+    }
+    #datosusuario{
+        background-color: rgb(167, 215, 255);
+    }
+    #reservacionboletos{
+        background-color: rgb(167, 215, 255);
+    }
+    label{
+        font-size: 120%;
+    }
+    input{
+        font-size: 120%;
+    }
+
+    #cuadro{
+        margin: auto;
+    }
+    #sinopsis{
+        font-size: 200%;
+    }
+    h2{
+    font-size: 200%;
+    }
+    table{
+        margin: auto;
+    }
+    td{
+        width: 30%;
+    }
+</style>
+
+<body>
+    <h1 align="right"><a href="/cinepolis.html">Regresar a la cartelera</a></h1>
+  <section id="cuadro">
+    <h2>Pelicula:</h2>
+    <h3>The Last Of Us</h3>
+    <img src="/cinepolis/pelis/tlou.jpg" alt="Poster TLOU" width="20%"/>
+    <h2>Sinopsis:</h2>
+    <p id="sinopsis">
+        Joel, un hombre que ha perdido todo, se ve obligado a 
+        hacerse</br> cargo de Ellie, una niña que es inmune a la 
+        plaga. Juntos, viajan</br> a través de un paisaje peligroso 
+        y desolado, enfrentando amenazas</br> tanto de los infectados
+        como de otros sobrevivientes desesperados.</br> A lo largo 
+        de su viaje, Joel y Ellie desarrollan un vínculo 
+        emocional,</br> y su relación se convierte en el corazón de la historia.
+    </p>
+  </section>
+
+ <form action="" method="post" enctype="text/plain">
+    <fieldset id="datosusuario">
+        <legend>Datos del usuario</legend>
+        <table>
+            <tr>
+                <td><label for="usuario">Nombre de usuario</label></td>
+                <td><label for="email">Correo Electrónico</label></td>
+                <td><label for="pass">Contraseña</label></td>
+                <td><h4>Género</h4></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="usuario" maxlength="10" placeholder="Max. 10 caracteres" required/></td>
+                <td><input type="email" id="email" placeholder="190000@gmail.com"required/></td>
+                <td><input type="password" id="password"required/></td>
+                <td>
+                    <input type="radio" id="genero" name="genero"/>
+                    <label for="genero">Masculino</label></br>
+
+                    <input type="radio" id="genero" name="genero"/>
+                    <label for="genero">Femenino</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset id="reservacionboletos">
+        <legend>Reservación de boletos</legend>
+        <table>
+            <tr>
+                <td><h3>Seleccione el cine</h3></td>
+                <td><h3><label for="boletos">Cantidad de boletos</label></h3></td>
+                <td><h3><label for="fecha">Fecha de función</label></h3></td>
+                <td><h3><label for="hora">Hora de función</label></h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <select size="4">
+                        <option>Plaza Sendero</option>
+                        <option>MacroPlaza</option>
+                        <option>Plaza El Dorado</option>
+                        <option>Plaza San Luis</option>
+                        <option>Plaza Citadina</option>
+                        <option>Plaza Citadella</option>
+                    </select>
+                </td>
+                <td><input type="number" id="boletos" max="10" min="1" placeholder="Max 10" required/></td>
+                <td><input type="date" id="fecha"required/> </td>
+                <td><input type="time" id="hora"required/> </td>
+            </tr>
+        </table>
+    </fieldset>
+</br> 
+<label for="Rango">Califica el servicio de la reservación de boletos</label><br/>
+<input type="range" name="rango" id="Rango" min="0" max="10" value="5" />
+<p align="right">    
+    <input type="submit" value="Reservar boletos"/><br/>
+    <input type="checkbox" id="condiciones"/><label for="condiciones" required>Acepto terminos y condiciones</label></br></br>
+    <input type="reset" value="Resetear información"/>
+</p>  
+<label for="comenta">Comenta en que podemos mejorar :)</label></br>
+<textarea name="comenta" id="comenta" cols="50" rows="5">
+</textarea></br>
+ </form>
+
+</body>
+</html>
