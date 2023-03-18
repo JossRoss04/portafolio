@@ -1,0 +1,43 @@
+body{
+    background-color: gray;
+}
+fieldset{
+    margin: auto;
+    width: 50%;
+}
+#titulo{
+    text-align: center;
+    color: rgb(201, 201, 201);
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+#subtitulo{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+legend{
+    color:rgb(247, 247, 247);
+    font-weight: bolder ;
+    font-size: 20px;
+}
+label{
+    color: rgb(224, 224, 224);
+}
+td{
+    width: 250px;
+}
+.tablas{
+    margin: auto;
+    width: 600px;
+}
+#formadepagolista{
+    height: 30px;
+}
+#titulosfinales{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
