@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(255, 243, 254);
+}
+#titulo1,#titulo2{
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+}
+div{
+    background-color: rgb(203, 247, 201);
+}
+p,#parrafo1{
+    text-align: justify;
+}
+#parrafo1{
+    color: rgb(136, 177, 54);
+}
+h2{
+    color: blue;
+    font-style: italic;
+}
