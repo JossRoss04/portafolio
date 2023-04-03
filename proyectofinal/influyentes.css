@@ -36,8 +36,8 @@ a{
     margin-right: auto;
     border-collapse: collapse;
     background-color: #FFCC33;
-      position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
 }
 .select, #presente{
     border: solid;
@@ -62,7 +62,7 @@ a{
 
 /*Cuadro de informacion principal*/
 .intro{
-    background-color: rgb(228, 129, 9);
+    background-color: rgba(47, 226, 100, 0.438);
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +71,7 @@ p{
     margin-left: 30px;
     margin-right: 30px;
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: justify;
     font-family: "fuente3", monospace;
 }
