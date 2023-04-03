@@ -1,0 +1,152 @@
+*{
+    margin: 15px, 10px; 
+}
+
+body
+{
+   background-color: #094bbc;
+}
+a{
+   text-decoration: none;
+}
+.imagen
+{
+   width: 50%;
+   position: absolute;
+   left: 46%;
+   top: 30%;
+}
+
+#información
+{
+   border: 1px solid #000000;
+}
+
+@font-face 
+{
+   font-family: "fuente1";
+   src: url("Fuentes/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+h1
+{
+   font-family: "fuente1", sans-serif;
+   text-align: center;
+   color: #ffffff;
+   font-size: 30px;
+}
+
+@font-face 
+{
+   font-family: "fuente2";
+   src: url("Fuentes/Aldrich/Aldrich-Regular.ttf") format("truetype");
+}
+
+h2
+{
+   font-family: "fuente2", sans-serif;
+   text-align: center;
+   color: #ec0c0c;
+   font-size: 30px;
+}
+
+@font-face
+{
+   font-family: "fuente 4";
+   src: url("Fuentes/Electrolize/Electrolize-Regular.ttf") format("truetype");
+}
+
+h3
+{
+  font-family: "fuente 4", sans-serif;
+  text-align: center;
+  color: #f67e07;
+  font-size: 25px;
+}
+
+@font-face
+{
+   font-family: "fuente 5";
+   src: url("Fuentes/Press_Start_2P/PressStart.ttf") format("truetype");
+}
+
+h4
+{
+  font-family: "fuente 5", cursive; 
+  text-align: center;
+  color: #249a1a;
+  font-size: 20px;
+}
+
+@font-face 
+{
+   font-family: "fuente3";
+   src: url("Fuentes/VT323/VT323-Regular.ttf") format("truetype");
+}
+
+p{
+   font-family: 'VT323', monospace;
+   font-size: 25px;
+   text-align: justify;
+   color:#1F9F26;
+}
+
+caption
+{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:#ec800c;
+}
+
+table
+{
+  margin: 0 auto;
+}
+
+th,td
+{
+  text-align: center;
+  border: 1px solid #000000;
+  background-color: #ec660c;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ece80d;
+}
+
+.títulos
+{
+   color: #249a1a;
+}
+
+.títulos:hover
+{
+   color:#55f955;
+}
+
+.títulos:active
+{
+   color:#8dff8d;
+}
+
+.SMB
+{
+  margin: 0 5px;
+}
+.videos
+{
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width: 900px)
+{
+ .videos
+ {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .SMB
+ {
+   margin-bottom: 10px;
+ }
+}
