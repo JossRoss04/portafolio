@@ -1,0 +1,160 @@
+*{
+   margin: 15px, 10px; 
+}
+
+body
+{
+  background-color: #094bbc;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+#titulo{
+  font-family: "fuente1", cursive;
+  text-align: center;
+  color:#d34503;
+  font-size: 36px;
+}
+.seleccion{
+  font-family: "fuente2", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  background-color: #FFCC33;
+  position: sticky;
+  top: 0;
+}
+.select, #presente{
+  border: solid;
+  width: 350px;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+}
+.select:hover, #presente:hover{
+  border: solid;
+  color: rgb(0, 0, 0);
+  background-color: #9c7911;
+  text-decoration: underline;
+}
+.imagen
+{
+  width: 50%;
+  position: absolute;
+  left: 46%;
+  top: 30%;
+}
+ 
+@font-face 
+{
+  font-family: "fuente1";
+  src: url("Fuentes/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+}
+
+h1
+{
+  font-family: "fuente1", sans-serif;
+  text-align: center;
+  color: #462714;
+  font-size: 30px;
+}
+h3
+{
+ font-family: "fuente 4", sans-serif;
+ text-align: center;
+ color: #f67e07;
+ font-size: 25px;
+}
+@font-face 
+{
+  font-family: "fuente2";
+  src: url("Fuentes/Aldrich/Aldrich-Regular.ttf") format("truetype");
+}
+
+h2
+{
+  font-family: "fuente2", sans-serif;
+  text-align: center;
+  color: #ec0c0c;
+  font-size: 30px;
+}
+h4
+{
+  font-family: "fuente 5", cursive; 
+  text-align: center;
+  color: #249a1a;
+  font-size: 20px;
+}
+@font-face 
+{
+  font-family: "fuente3";
+  src: url("Fuentes/VT323/VT323-Regular.ttf") format("truetype");
+}
+
+p{
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  text-align: justify;
+  color:#1F9F26;
+}
+
+caption
+{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 20px;
+ color:#ec800c;
+}
+
+table
+{
+ margin: 0 auto;
+}
+
+th,td
+{
+ text-align: center;
+ border: 1px solid #000000;
+ background-color: #ec660c;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #ece80d;
+}
+.títulos
+{
+  color: #249a1a;
+}
+
+.títulos:hover
+{
+  color:#55f955;
+}
+
+.títulos:active
+{
+  color:#8dff8d;
+}
+
+.MK
+{
+ margin: 0 5px;
+}
+
+.videos
+{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px)
+{
+.videos
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+.MK
+{
+  margin-bottom: 10px;
+}
+}
