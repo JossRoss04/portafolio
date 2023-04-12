@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 100px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    margin-left: 565px;
+    margin-right: 565px;
+    color: rgb(128, 154, 240);
+    text-decoration: underline solid;
+}
+p{
+    margin-left: 4%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.elemento1{
+    background: rgb(255, 139, 139);
+    border: solid 10px rgb(151, 195, 201);
+    outline-style: dotted;
+    outline-width: 20px;
+    outline-color: rgb(245, 127, 127);
+    outline-offset: 10px;
+}
+.elemento2{
+    background: lightblue;
+    border: solid 10px rgb(253, 159, 159);
+    outline-style: solid;
+    outline-width: 30px;
+    outline-color: rgb(127, 212, 245);
+    outline-offset: 0px;
+}
+.elemento3{
+    background: lightyellow;
+    border: solid 10px lightgray;
+    outline-style: outset;
+    outline-width: 15px;
+    outline-color: lightgoldenrodyellow;
+    outline-offset: 0px;
+}
+.elemento4{
+    background: rgb(255, 139, 139);
+    border: solid 10px rgb(151, 195, 201);
+}
