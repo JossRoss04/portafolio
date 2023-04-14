@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(examenparcial2/fuentes/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(examenparcial2/fuentes/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'fuente3';
+    src: url(examenparcial2/fuentes/Merriweather/Merriweather-BlackItalic.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#menu{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 160px;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+.principal{
+    background-color: rgb(10, 78, 10);
+    color: aliceblue;
+}
+.principal:hover{
+    background-color: rgb(10, 78, 10);
+    color: aliceblue;
+}
+li a{
+    background-color: rgb(11, 146, 11);
+    color: aliceblue;
+    font-family: 'fuente1';
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+li a:hover{
+    background-color: rgb(81, 179, 81);
+    color: black;
+    font-family: 'fuente2';
+    cursor: crosshair;
+}
+li ul{
+    display: none;
+}
+.desplegable li:hover > ul{
+    display: block;
+}
+body{
+    background-image: url(examenparcial2/naturaleza.jpeg);
+    position: static;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.titulo{
+    position: absolute;
+    right: 30px;
+    margin-right: 5px;
+    margin-top: 2px;
+    width: 450px;
+    background: rgb(189, 249, 228);
+    border: solid 1px rgb(71, 71, 71);
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+}
+
+.textotitulo{
+    margin-left: 15px;
+    font-family: 'fuente3';
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.851);
+}
+
+
+
