@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 getElementById</title>
+    <link rel="stylesheet" href="Práctica-2-getElementById.css">
+    <script src="Práctica-2-getElementById.js"></script>
+</head>
+<body>
+    <h1 style="font-size: 40px;">Operaciones Matemáticas</h1>
+    <div class="contenedor">
+    <form method="post" action="" enctype="text/plain">
+        <label for="numero1">Escribe un número: </label></br>
+        <input type="text" id="numero1" name="numero1"></br>
+
+        <label for="numero2">Escribe otro número: </label></br>
+        <input type="text" id="numero2" name="numero2"></br></br>
+
+        <input type="button" name="sumar" id="sumar" value="sumar" onclick="sumarF()">
+        <input type="button" name="restar" id="restar" value="restar" onclick="restarF()">
+        <input type="button" name="multiplicar" id="multiplicar" value="multiplicar" onclick="multiplicarF()">
+        <input type="button" name="dividir" id="dividir" value="dividir" onclick="dividirF()">
+    </form>
+    <h2>El resultado es: </h2>
+    <p id="resultado" name="resultado"></p>
+    </div>
+</body>
+</html>

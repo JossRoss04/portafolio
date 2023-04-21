@@ -1,0 +1,58 @@
+*{
+    padding: 8px;
+}
+label{
+    color: black;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+        'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 
+        sans-serif;
+}
+.contenedor{
+    width: 22%;
+    background: rgb(206, 231, 252);
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+#numero1, #numero2{
+    background-color: rgb(255, 229, 229);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border-radius: 20px 0px 20px 0px;
+    -moz-border-radius: 20px 0px 20px 0px;
+    -webkit-border-radius: 20px 0px 20px 0px;
+}
+#sumar, #restar, #multiplicar, #dividir{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    width: 35%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    background: rgb(255, 255, 255);
+    margin-left: 30px;
+    margin-top: 5px;
+}
+h2{
+    font-weight: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin-left: 45px;
+}
+#resultado{
+    background-color: rgb(255, 229, 229);
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    border: solid 2px black;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    width: 50%;
+    margin-left: 83px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline 2.5px;
+}
