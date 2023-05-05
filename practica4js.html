@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC generator</title>
+    <link rel="stylesheet" href="practica4js.css"/>
+    <script src="practica4js.js"></script>
+</head>
+<body>
+    <div>
+        <form method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label></br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre"></br>
+    
+            <label for="apellima">Apellido paterno:</label></br>
+            <input type="text" name="apellipa" id="apellipa" placeholder="Apellido paterno"></br>
+    
+            <label for="apellima">Apellido materno:</label></br>
+            <input type="text" name="apellima" id="apellima" placeholder="Apellido materno"></br>
+    
+            <label for="Byear">Año de Nacimiento:</label></br>
+            <input type="text" name="Byear" id="Byear" placeholder="Año de Nacimiento"></br>
+    
+            <label for="Bmonth">Mes de Nacimiento:</label></br>
+            <input type="text" name="Bmonth" id="Bmonth" placeholder="Mesd de Nacimiento"></br>
+    
+            <label for="Bday">Día de Nacimiento:</label></br>
+            <input type="text" name="Bday" id="Bday" placeholder="Día de Nacimiento"></br>
+    
+            <label for="rfc">RFC Generado:</label></br>
+            <input type="text" name="rfc" id="rfc"></br></br>
+    
+            <input type="button" id="generar" for="generar" onclick="generarRFC()" value="Generar RFC">
+        </form>
+    </div>
+
+</body>
+</html>
