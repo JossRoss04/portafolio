@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Api-Storage</title>
+  <style>
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    body{
+      background-color: bisque;
+    }
+    h1{
+      font-size: 70px;
+      text-align: center;
+      color: rgb(12, 144, 189);
+    }
+    h2{
+      font-size: 40px;
+      text-align: center;
+      color: rgb(189, 12, 12);     
+    }
+    p{
+      font-size: 25px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+    label{
+      font-size: 50px;
+      text-align: center;
+      color: rgb(189, 12, 130);
+    }
+    input{
+      border-radius: 50px 50px 50px 50px;
+      -moz-border-radius: 50px 50px 50px 50px;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      text-align: center;
+      margin-left: 34%;
+      width: 30%;
+      height: 40px;
+      font-size: 30px;
+    }
+    #a{
+      margin-top: 1%;
+      margin-left: 31%;
+    }
+    button{
+      font-size: 30px;
+      border-radius: 50px 50px 50px 50px;
+      -moz-border-radius: 50px 50px 50px 50px;
+      -webkit-border-radius: 50px 50px 50px 50px;
+      background-color: lightgrey;
+      color: black;
+    }
+    button:hover{
+      background-color: rgb(238, 236, 236);
+      cursor: pointer;
+    }
+    #result{
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Api-Storage</h1>
+  <h2>Importancia</h2>
+  <p>Es mejor usar el API storage, pues Los datos son guardados en la
+    memoria del navegador, evitando
+    así el uso de cookies, las cuales
+    son menos eficientes.</p>
+    <h2>Implementación</h2>
+  <p>En esta página se hace la demostración de como se puede guardar un nombre, este nombre </br>se guarda en la memoria del navegador, permitiendo que se queden asi, hasta que se eliminen</p>
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name"></br>
+<div id="a">
+  <button onclick="getName()">Guardar Nombre</button>
+  <button onclick="getData()">Mostrar Nombre</button>
+</br>
+  <div id="result"></div>
+</div>
+  <script src="api_practica6.js"></script>
+</body>
+</html>
+
