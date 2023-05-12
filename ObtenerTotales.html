@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuestionario de la UPSLP</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" href="ObtenerTotales.css">
+
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	for (var x=1;x<=4;x++)
+		/*El ciclo for externo, recorrerá la cantidad de preguntas, que son 4*/
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+		/*El ciclo for interno, recorrerá la cantidad de respuestas, que son 4, con el fin de
+			hacer el código mas práctico y corto, pues al ser una acción que se repite, la mejor
+			opción es usar el ciclo for*/
+        {
+            if(resul[i].checked==true)
+			/*Se evalua si la respuesta a la que esta posicionada i,esta seleccionada con el radius
+				se ahí agarra el valor y lo guarda en la variable res*/
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+		/*Suma el total con los puntos obtenidos*/
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Responde la encuesta</h1>
+	<h2>Tu opinión es importante</h2>
+<form>
+<div id="todo">
+	
+	<ul>
+		<li>Cantidad de alumnos de egresados</li><!--En esta sección, se colocan los inputs radius,
+			para seleccionar la respuesta-->
+		<input type="radio" name="r1" id="r1" value="5"/>mas de 6000<br/><!--Esta es la correcta y 
+		tiene un valor de 5, las demás es de 0-->
+		<input type="radio" name="r1" id="r1" value="0"/>menos de 660<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>10000<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>5043<br/>
+		
+		<li>Costo de la inscripción</li>
+		<input type="radio" name="r2" id="r2" value="5"/>$4900<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>$6000<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>$3964<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>$5000<br/>
+
+		<li>Calificacion mínima aprobatoria</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Calificación de 7<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Calificación de 6.5<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Calificación de 6<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Calificación de 7.5<br/>
+
+        <li>¿Cuántas carreras tiene la UPSLP</li>
+		<input type="radio" name="r4" id="r4" value="5"/>6 carreras<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>3 carreras<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>10 carreras<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>7 carreras<br/>
+	</ul>
+</div>
+<div id="botones">
+<input class="boton" type="button" value="Evaluar" onclick="califica()"><!--Al dar click en el boton, se invoca la funcion
+que sumara los puntos totales-->
+</div>
+</form>
+<div id="fin">
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</div>
+</body>
+</html>
