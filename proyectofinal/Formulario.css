@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "fuente1";
+    src: url("Fuentes/Monoton/Monoton-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "fuente2";
+    src: url("Fuentes/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "fuente3";
+    src: url("Fuentes/VT323/VT323-Regular.ttf") format("truetype");
+  }
+  /*Paginas de seleccion*/
+.seleccion{
+  font-family: "fuente2", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  background-color: #FFCC33;
+  position: sticky;
+  top: 0;
+}
+.select, #presente{
+  border: solid;
+  width: 350px;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+}
+.select:hover, #presente:hover{
+  border: solid;
+  color: rgb(0, 0, 0);
+  background-color: #9c7911;
+  text-decoration: underline;
+}
+body{
+    background-color: #00008b;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#titulo{
+  font-family: "fuente1", cursive;
+  text-align: center;
+  color:#d34503;
+  font-size: 36px;
+}
+h1 {
+  font-family: "fuente1", sans-serif;
+  text-align: center;
+  color: #ce7100;
+  font-size: 30px;
+}
+
+#contenedor{
+    margin-left: 16%;
+    padding: 10px;
+    background-color: rgba(133, 10, 10, 0.582);
+    width: 75%;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+#nombre, #email, #pregunta1, #pregunta2, #pregunta3, #pregunta4, #pregunta5, #mensaje{
+  margin-top: 20px;
+  margin-bottom: 30px;
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    font-size: 30px;
+    height: 40px;
+}
+label{
+    font-family: "fuente2", sans-serif;
+    text-align: center;
+    color: #ffd700;
+    font-size: 30px;
+}
+#submit{
+  background-color: rgb(49, 148, 24);
+    margin-top: 3px;
+    font-size: 30px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+#submit:hover{
+    background-color: rgb(61, 221, 21);
+    cursor: pointer;
+}

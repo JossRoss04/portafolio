@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuestionario</title>
+    <link rel="stylesheet" href="Cuestionario_182155/Cuestionario.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+
+<script type="text/javascript" src="Cuestionario_182155/js/jquery/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/jspdf.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.addimage.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.split_text_to_size.js"></script>
+<script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.from_html.js"></script>
+
+<script align="center">
+var total;
+function califica()
+    {var total=0;
+    	for (var x=1;x<=10;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==50)
+        	document.getElementById("comentario").innerHTML="Coronel. Ahora formas parte de los PoliGamers";
+        else
+        	if(total==45 || total==40)
+        	document.getElementById("comentario").innerHTML="General. Eres un amante de los videojuegos";
+		else
+        	if(total==35 || total==30)
+        	document.getElementById("comentario").innerHTML="Sargento. Las horas de juego sirvieron de algo";
+		else
+        	if(total==25 || total==20)
+        	document.getElementById("comentario").innerHTML="Cabo. Sigue usando el control y llegarás a más niveles";
+		else
+        	if(total==15 || total==10)
+        	document.getElementById("comentario").innerHTML="Novato. Tienes un gran camino por recorrer";
+		else
+        	if(total==5 || total==0)
+        	document.getElementById("comentario").innerHTML="Aspirante. Haz un gran esfuerzo si quieres ser un buen gamer";
+    }
+
+	function generar(){
+		//Crear un nuevo objeto o instancia jsPDF
+	var doc = new jsPDF();
+
+	doc.setFontSize(40);
+    //color de texto
+    doc.setTextColor(9,7,121);
+    doc.text(40,20,"Trivia gamer");
+    doc.setTextColor(17,122,209);
+    doc.setFontSize(30);
+    doc.text(50,35,"¿Eres capaz de adivinar todas las incógnitas de algunos de los videojuegos más influyentes? Contesta las siguientes preguntas y verás el rango que se ta otorgado por tu esfuerzo y dedicación hacia este universo del gaming.");//ubicacion,
+    doc.setTextColor(0,0,0);
+    doc.setFontSize(20);
+    doc.text(20,50,"50 puntos: Coronel. \r 10 respuestas correctas");
+    doc.text(20,70,"45 o 40 puntos: General. \r 9 u 8 respuestas correctas");
+    doc.text(20,90,"35 o 30 puntos: Sargento. \r 7 o 6 respuestas correctas");
+    doc.text(20,110,"25 o 20 puntos: Cabo. \r 5 o 4 respuestas correctas");
+    doc.text(20,130,"15 o 10 puntos: Novato. \r 3 o 2 respuestas correctas");
+	doc.text(20,150,"5 o 0 puntos: Aspirante. \r 1 o ninguna respuesta correcta");
+ 
+    var string=doc.output('datauristring');
+	$('iframe').attr('src',string);
+}
+</script>
+
+<body>
+    <table class="seleccion">
+        <tr>
+            <!-- <td class="select"><a href="introduccion.html">Introducción a los videojuegos</a></td> -->
+            <td class="select"><a href="qya.html">Q&A</a></td>
+            <td class="select"><a href="influyentes.html">Juegos más influyentes</td></a>
+            <td class="select"><a href="Cuestionario.html">Trivia-Gamer</a></td>
+            <td class="select"><a href="Formulario.html">Danos tu opinión :)</a></td>
+        </tr>
+    </table>
+
+	<a href="Inicio.html"><h1 id="titulo">Las crónicas de los poligamers</h1></a>
+    <div id="contiene">
+	<h1 href="">Trivia gamer</h1>
+	<h2>¿Eres capaz de adivinar todas las incógnitas de algunos de los videojuegos más influyentes? Contesta las siguientes preguntas y verás el rango que se ta otorgado por tu esfuerzo y dedicación hacia este universo del gaming.</h2>
+<form>
+<div id="test">
+	
+	<ul>
+
+		<li>Nombre del protagonista de DOOM:</li>
+		<input type="radio" name="r1" id="r1" value="0"/>John "Reaper" Grimm<br/>
+		<input type="radio" name="r1" id="r1" value="5"/>Doom Guy<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Flynn "Fly" Taggart<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Samuel Hayden<br/><br/>
+		
+		<li>¿En qué año se estrena Pac-Man?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>1981<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>1982<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>1979<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>1980<br/><br/>
+
+		<li>¿Qué juego de Final Fantasy es reconocido por tener un mundo con avances tecnológicos?</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Final Fantasy VII<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy XV<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy X<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy V<br/><br/>
+
+        <li>¿En qué novela de ciencia ficción se inspiró Space Invaders?</li>
+		<input type="radio" name="r4" id="r4" value="0"/>Neuromante<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Solaris<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>La Guerra de los Mundos<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Crónicas marcianas<br/><br/>
+
+		<li>¿A qué género pertenece Dark Souls?</li>
+		<input type="radio" name="r5" id="r5" value="0"/>MMO<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>JRPG<br/>
+		<input type="radio" name="r5" id="r5" value="5"/>Rol de acción<br/>
+		<input type="radio" name="r5" id="r5" value="0"/>Estrategia<br/><br/>
+
+		<li>Lenguaje de programación utilizado para el desarrollo de Minecraft:</li>
+		<input type="radio" name="r6" id="r6" value="0"/>C#<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>C++<br/>
+		<input type="radio" name="r6" id="r6" value="0"/>Python<br/>
+		<input type="radio" name="r6" id="r6" value="5"/>Java<br/><br/>
+
+		<li>¿Cuál fue el primer antagonista de la saga Super Mario Bros.?</li>
+		<input type="radio" name="r7" id="r7" value="0"/>Wario<br/>
+		<input type="radio" name="r7" id="r7" value="5"/>Bowser<br/>
+		<input type="radio" name="r7" id="r7" value="0"/>Rey Boo<br/>
+		<input type="radio" name="r7" id="r7" value="0"/>Kamek<br/><br/>
+
+		<li>Escuadrón de infantería más reconocido de la saga Gears of War:</li>
+		<input type="radio" name="r8" id="r8" value="0"/>Zeta-Seis<br/>
+		<input type="radio" name="r8" id="r8" value="0"/>Alfa<br/>
+		<input type="radio" name="r8" id="r8" value="5"/>Delta-Uno<br/>
+		<input type="radio" name="r8" id="r8" value="0"/>Kilo<br/><br/>
+
+		<li>¿Quién es el protagonista de GTA San Andreas?</li>
+		<input type="radio" name="r9" id="r9" value="0"/>Sweet Johnson<br/>
+		<input type="radio" name="r9" id="r9" value="0"/>Big Smoke<br/>
+		<input type="radio" name="r9" id="r9" value="0"/>Madd Dogg<br/>
+		<input type="radio" name="r9" id="r9" value="5"/>Carl "CJ" Johnson<br/><br/>
+
+		<li>¿Cuál es el nombre real de Scorpion de Mortal Kombat?</li>
+		<input type="radio" name="r10" id="r10" value="0"/>Quan Chi<br/>
+		<input type="radio" name="r10" id="r10" value="0"/>Bi-Han<br/>
+		<input type="radio" name="r10" id="r10" value="5"/>Hanzo Hasashi<br/>
+		<input type="radio" name="r10" id="r10" value="0"/>Kuai Liang<br/><br/>
+	</ul>
+	
+</div>
+<input type="button" value="Evaluar" onclick="califica()"><!--Al dar click en el boton, se invoca la funcion
+    que sumara los puntos totales-->
+<input type="button" value="Generar PDF" onclick="generar()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
