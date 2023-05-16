@@ -6,18 +6,72 @@
    src: url("Fuentes/Monoton/Monoton-Regular.ttf") format("truetype");
  }
  @font-face {
-     font-family: "fuente2";
-     src: url("Fuentes/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
-   }
-   @font-face {
-     font-family: "fuente3";
-     src: url("Fuentes/VT323/VT323-Regular.ttf") format("truetype");
-   }
+   font-family: "fuente2";
+   src: url("Fuentes/Orbitron/Orbitron-VariableFont_wght.ttf") format("truetype");
+ }
+ @font-face {
+   font-family: "fuente3";
+   src: url("Fuentes/VT323/VT323-Regular.ttf") format("truetype");
+ }
 body
 {
    background-color: #094bbc;
 }
+h1{
+   font-family: "fuente1", cursive;
+   text-align: center;
+   color:#d34503;
+   font-size: 36px;
+ }
+ h2{
+   font-family: "fuente2", sans-serif;
+   text-align: center;
+   color: #ffd700;
+   font-size: 30px;
+ }
+ .seleccion{
+   font-family: "fuente2", sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: collapse;
+   background-color: #FFCC33;
+   position: sticky;
+   top: 0;
+ }
+ .select{
+   border: solid;
+   width: 350px;
+   text-align: center;
+   height: 50px;
+   font-size: 20px;
+ }
+ .select:hover{
+   border: solid;
+   color: rgb(0, 0, 0);
+   background-color: #9c7911;
+   text-decoration: underline;
+ }
+ a{
+   color: black;
+   text-decoration: none;
+ }
+ p{
+   margin-left: 10px;
+   margin-right: 20px;
+   font-family: "fuente3", monospace;
+   text-align: justify;
+   color:#53ec53;
+   font-size: 26px;
+ } 
+#op
+{
+   list-style:none;
+}
 
+#boton
+{
+   text-align: center;
+}
 
 h1
 {
@@ -28,57 +82,55 @@ h1
 }
 
 
-h2{
-    font-family: 'VT323', monospace;
-    font-size: 25px;
-    text-align: justify;
-    color:#1F9F26;
+li
+{
+   text-align: center;
+   font-family: "fuente3", sans-serif;
+   font-size: 15px;
+   color: #ee731b;
+}
+
+@font-face 
+{
+   font-family: "fuente4";
+   src: url("Fuentes/Aldrich/Aldrich-Regular.ttf") format("truetype");
+}
+
+#opcion
+{
+   text-align: center;
+   font-family: "fuente4", sans-serif;
+   font-size: 15px;
+   color: #ece80d;
+}
+
+@font-face 
+{
+   font-family: "fuente5";
+   src: url("Fuentes/Press_Start_2P/PressStart.ttf") format("truetype");
+}
+
+#total
+{
+   font-family: "fuente5", cursive;
+   font-size: 15px;
+   text-align: center;
+   color: #1F9F26;
+}
+
+#comentario
+{
+   font-family: "fuente5", cursive;
+   font-size: 15px;
+   text-align: center;
+   color: #1F9F26;
+}
+
+div {
+   text-align:center;
+   width:100%;
  }
-
-#test
-{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 15px;
-   color: #ffffff;
-}
-
-p
-{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 15px;
-   text-align: left;
-   color: #ffffff;
-}
-.seleccion{
-   font-family: "fuente2", sans-serif;
-   margin-left: auto;
-   margin-right: auto;
-   border-collapse: collapse;
-   background-color: #FFCC33;
-   position: sticky;
-   top: 0;
-}
-.select, #presente{
-   border: solid;
-   width: 350px;
-   text-align: center;
-   height: 50px;
-   font-size: 20px;
-}
-a{
-   color: black;
-   text-decoration: none;
-   font-size: 30px;
-}
-.select:hover, #presente:hover{
-   border: solid;
-   color: rgb(0, 0, 0);
-   background-color: #9c7911;
-   text-decoration: underline;
-}
-#titulo{
-   font-family: "fuente1", cursive;
-   text-align: center;
-   color:#d34503;
-   font-size: 36px;
-}
+ div > iframe{
+   width: 600px; 
+   height: 500px;
+ }
