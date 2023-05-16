@@ -3,6 +3,7 @@
 <head>
 	<title>Cuestionario</title>
     <link rel="stylesheet" href="Cuestionario_182155/Cuestionario.css">
+	<link rel="icon" href="Cuestionario_182155/Icono/Poligamers.jpeg">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -16,7 +17,7 @@
 <script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.split_text_to_size.js"></script>
 <script type="text/javascript" src="Cuestionario_182155/jspdf.plugin.from_html.js"></script>
 
-<script align="center">
+<script>
 var total;
 function califica()
     {var total=0;
@@ -78,105 +79,118 @@ function califica()
 </script>
 
 <body>
-    <table class="seleccion">
-        <tr>
-            <!-- <td class="select"><a href="introduccion.html">Introducción a los videojuegos</a></td> -->
-            <td class="select"><a href="qya.html">Q&A</a></td>
-            <td class="select"><a href="influyentes.html">Juegos más influyentes</td></a>
-            <td class="select"><a href="Cuestionario.html">Trivia-Gamer</a></td>
-            <td class="select"><a href="Formulario.html">Danos tu opinión :)</a></td>
-        </tr>
-    </table>
+	<table class="seleccion">
+		<tr>
+			<!-- <td class="select"><a href="introduccion.html">Introducción a los videojuegos</a></td> -->
+			<td class="select"><a href="qya.html">Q&A</a></td>
+			<td class="select"><a href="influyentes.html">Juegos más influyentes</td></a>
+			<td class="select"><a href="Cuestionario.html">Trivia Gamer</a></td>
+			<td class="select"><a href="Formulario.html">Danos tu opinión :)</a></td>
+		</tr>
+	</table>
+	<h1>Las crónicas de los poligamers</h1></b>
 
-	<a href="Inicio.html"><h1 id="titulo">Las crónicas de los poligamers</h1></a>
     <div id="contiene">
-	<h1 href="">Trivia gamer</h1>
-	<h2>¿Eres capaz de adivinar todas las incógnitas de algunos de los videojuegos más influyentes? Contesta las siguientes preguntas y verás el rango que se ta otorgado por tu esfuerzo y dedicación hacia este universo del gaming.</h2>
+	<h2>Trivia-Gamer</h2>
+	<p>¿Eres capaz de adivinar todas las incógnitas de algunos de los videojuegos más influyentes? Contesta las siguientes preguntas y verás el rango que se ta otorgado por tu esfuerzo y dedicación hacia este universo del gaming.</p>
+    <div align="center"><img src="Cuestionario_182155/start.jpg" style="width: 35%;"/></div>
 <form>
-<div id="test">
 	
-	<ul>
+	<ul id="op">
 
 		<li>Nombre del protagonista de DOOM:</li>
+		<div id="opcion">
 		<input type="radio" name="r1" id="r1" value="0"/>John "Reaper" Grimm<br/>
 		<input type="radio" name="r1" id="r1" value="5"/>Doom Guy<br/>
 		<input type="radio" name="r1" id="r1" value="0"/>Flynn "Fly" Taggart<br/>
 		<input type="radio" name="r1" id="r1" value="0"/>Samuel Hayden<br/><br/>
+	    </div>
 		
+		<div id="opcion">
 		<li>¿En qué año se estrena Pac-Man?</li>
 		<input type="radio" name="r2" id="r2" value="0"/>1981<br/>
 		<input type="radio" name="r2" id="r2" value="0"/>1982<br/>
 		<input type="radio" name="r2" id="r2" value="0"/>1979<br/>
 		<input type="radio" name="r2" id="r2" value="5"/>1980<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>¿Qué juego de Final Fantasy es reconocido por tener un mundo con avances tecnológicos?</li>
 		<input type="radio" name="r3" id="r3" value="5"/>Final Fantasy VII<br/>
 		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy XV<br/>
 		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy X<br/>
 		<input type="radio" name="r3" id="r3" value="0"/>Final Fantasy V<br/><br/>
+		</div>
 
+		<div id="opcion">
         <li>¿En qué novela de ciencia ficción se inspiró Space Invaders?</li>
 		<input type="radio" name="r4" id="r4" value="0"/>Neuromante<br/>
 		<input type="radio" name="r4" id="r4" value="0"/>Solaris<br/>
 		<input type="radio" name="r4" id="r4" value="5"/>La Guerra de los Mundos<br/>
 		<input type="radio" name="r4" id="r4" value="0"/>Crónicas marcianas<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>¿A qué género pertenece Dark Souls?</li>
 		<input type="radio" name="r5" id="r5" value="0"/>MMO<br/>
 		<input type="radio" name="r5" id="r5" value="0"/>JRPG<br/>
 		<input type="radio" name="r5" id="r5" value="5"/>Rol de acción<br/>
 		<input type="radio" name="r5" id="r5" value="0"/>Estrategia<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>Lenguaje de programación utilizado para el desarrollo de Minecraft:</li>
 		<input type="radio" name="r6" id="r6" value="0"/>C#<br/>
 		<input type="radio" name="r6" id="r6" value="0"/>C++<br/>
 		<input type="radio" name="r6" id="r6" value="0"/>Python<br/>
 		<input type="radio" name="r6" id="r6" value="5"/>Java<br/><br/>
+		</div> 
 
+		<div id="opcion">
 		<li>¿Cuál fue el primer antagonista de la saga Super Mario Bros.?</li>
 		<input type="radio" name="r7" id="r7" value="0"/>Wario<br/>
 		<input type="radio" name="r7" id="r7" value="5"/>Bowser<br/>
 		<input type="radio" name="r7" id="r7" value="0"/>Rey Boo<br/>
 		<input type="radio" name="r7" id="r7" value="0"/>Kamek<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>Escuadrón de infantería más reconocido de la saga Gears of War:</li>
 		<input type="radio" name="r8" id="r8" value="0"/>Zeta-Seis<br/>
 		<input type="radio" name="r8" id="r8" value="0"/>Alfa<br/>
 		<input type="radio" name="r8" id="r8" value="5"/>Delta-Uno<br/>
 		<input type="radio" name="r8" id="r8" value="0"/>Kilo<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>¿Quién es el protagonista de GTA San Andreas?</li>
 		<input type="radio" name="r9" id="r9" value="0"/>Sweet Johnson<br/>
 		<input type="radio" name="r9" id="r9" value="0"/>Big Smoke<br/>
 		<input type="radio" name="r9" id="r9" value="0"/>Madd Dogg<br/>
 		<input type="radio" name="r9" id="r9" value="5"/>Carl "CJ" Johnson<br/><br/>
+		</div>
 
+		<div id="opcion">
 		<li>¿Cuál es el nombre real de Scorpion de Mortal Kombat?</li>
 		<input type="radio" name="r10" id="r10" value="0"/>Quan Chi<br/>
 		<input type="radio" name="r10" id="r10" value="0"/>Bi-Han<br/>
 		<input type="radio" name="r10" id="r10" value="5"/>Hanzo Hasashi<br/>
 		<input type="radio" name="r10" id="r10" value="0"/>Kuai Liang<br/><br/>
+		</div>
 	</ul>
-	
-</div>
+
+<div id="boton">
 <input type="button" value="Evaluar" onclick="califica()"><!--Al dar click en el boton, se invoca la funcion
     que sumara los puntos totales-->
 <input type="button" value="Generar PDF" onclick="generar()">
+</div>
 </form>
 <p></p>
 <p id="total">   </p>
 <p id="comentario">   </p>
-<iframe frameborder="0" width="600" height="500"></iframe>
+<div>
+<iframe frameborder="0"></iframe>
+</div>
 </div>
 </body>
-<script type="text/javascript">
-	var vsid = "si253540e5a0150";
-	(function() { 
-	var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
-	 vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
-	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
-	})();
-   </script>
-   
-   
 </html>
