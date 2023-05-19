@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(examenparcial2/fuentes/Merriweather/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(examenparcial2/fuentes/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'fuente3';
+    src: url(examenparcial2/fuentes/Merriweather/Merriweather-BlackItalic.ttf);
+}
+
+h1{
+    margin-left: 25%;
+   font-size: 50px;
+   color: rgb(13, 130, 169); 
+}
+#contenedor{
+    margin-left: 30%;
+    background-color: rgba(0, 255, 255, 0);
+    width: 50%;
+    padding: 5px;
+}
+
+label{
+    font-size: 30px;
+    font-family: 'fuente3';
+}
+#nombre{
+    margin-left: 9%;
+    padding: 5px;
+    width: 65%;
+    font-size: 20px;
+    background-color: lightblue;
+    border: 0.5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+#fecha{
+    margin-left: 28%;
+    padding: 5px;
+    width: 25%;
+    font-size: 20px;
+    border: 0.5px solid black;
+    border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+}
+#enviar{
+    background-color: lightcoral;
+    margin-left: 5%;
+    padding: 5px;
+    width: 70%;
+    font-size: 20px;
+    border: 0.5px solid black;
+}
+#enviar:hover{
+    background-color: rgb(192, 82, 82);
+    cursor: pointer;
+}
+#mensaje{
+    margin-left: 25%;
+    padding: 5px;
+    width: 50%;
+    font-size: 20px;
+    border: 0px;
+}
+#imagen{
+    margin-left: 39%;
+    width: 20%;
+}
